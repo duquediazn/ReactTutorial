@@ -9,6 +9,8 @@
 - [Convenciones para aplicar estilos en React](#convenciones-para-aplicar-estilos-en-react)
 - [Quiz de la sección](#quiz-de-la-sección)
 
+---
+
 ## Datos locales: importar un “mock” de base de datos
 
 Usaremos un módulo `data.js` que **exporta por defecto** (`export default`) un array de objetos; esto nos permite simular los datos que nos daría una API/BD e importarlos con un nombre libre en `App.jsx`. La exportación por defecto indica que el archivo tiene “un valor principal” y, al **importarlo**, no necesitamos llaves.
@@ -29,6 +31,8 @@ import data from "./data"
 💡 Ventajas de este enfoque:
 - Es **determinista** y rápido para desarrollar sin depender de una API real.
 - El **shape** (estructura) de cada objeto queda claro (por ejemplo, `img` es un objeto con `src` y `alt`), lo cual ayuda a tipar/validar más adelante si decides usar TypeScript o PropTypes.
+
+---
 
 ---
 

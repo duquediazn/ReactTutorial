@@ -12,6 +12,7 @@
 - [Resumen rápido](#resumen-rápido)
 - [Quiz de la sección](#quiz-de-la-sección)
 
+---
 ## Introducción a `state`
 
 En la sección anterior aprendimos que los componentes reciben datos mediante **props**, que funcionan como los **argumentos de una función**: vienen “de fuera” y el componente no debe modificarlos.  
@@ -233,8 +234,6 @@ Nota que en este ejemplo usamos `useEffect()`, que aún no hemos introducido. En
 
 ## Formularios en React
 
-## Formularios en React
-
 Trabajar con formularios en React es diferente a hacerlo con **HTML + JavaScript vanilla**.  
 En React no dejamos que el DOM sea la fuente de verdad, sino que usamos el **estado de React** como “single source of truth”.
 
@@ -379,6 +378,8 @@ const data = {
 - Elige entre controlled o uncontrolled según las necesidades de tu app.
 
 Estos conceptos de formularios están muy ligados al estado (useState) y a los efectos (useEffect), que podemos ver en más detalle en su [sección correspondiente](./06_SideEffects.md). 
+
+---
 
 ## Manejo de eventos en React
 

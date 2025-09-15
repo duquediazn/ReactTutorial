@@ -12,6 +12,8 @@ Por último, en esta sección veremos **qué cambia entre desarrollo y producci�
 - [Dónde desplegar (estático)](#dónde-desplegar-estático)
 - [Checklist de producción](#checklist-de-producción)
 
+---
+
 ## Dev vs Prod en Vite (visión rápida)
 
 - **Dev (`npm run dev`)**
@@ -28,6 +30,8 @@ Por último, en esta sección veremos **qué cambia entre desarrollo y producci�
     - **minificación** y **hashing** de archivos para cache busting.
 
 > `npm run preview` levanta un servidor que **simula** producción sobre `dist/`. Útil para comprobar rutas, SPA fallback, etc., **pero no es un servidor para producción**.
+
+---
 
 ## Comandos esenciales
 
@@ -58,6 +62,8 @@ export default defineConfig({
   base: '/mi-repo/' // cambia esto si la app vive en un subpath
 })
 ```
+
+---
 
 ## Variables de entorno
 
@@ -101,6 +107,8 @@ location / {
 }
 ```
 
+---
+
 ## Dónde desplegar (estático)
 
 - Vercel / Netlify (muy cómodo para Vite/React).
@@ -109,6 +117,8 @@ location / {
 
 >Build directory: apunta a dist/.
 >Command: npm run build.
+
+---
 
 ## Checklist de producción
 - npm run build genera dist/ sin errores.

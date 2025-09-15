@@ -1,5 +1,16 @@
 # Side Effects
 
+## Índice de contenidos
+- [¿Qué es un “efecto” en React?](#qué-es-un-efecto-en-react)
+- [Dependencias del efecto](#dependencias-del-efecto)
+- [Cleanup en efectos](#cleanup-en-efectos)
+- [Sincronización con props/estado](#sincronización-con-propsestado)
+- [Render vs efectos: ¿qué va en cada sitio?](#render-vs-efectos-qué-va-en-cada-sitio)
+- [Buenas prácticas con efectos](#buenas-prácticas-con-efectos)
+- [Resumen](#resumen)
+- [Ejemplo completo](#ejemplos-completos)
+- [Quiz de la sección](#quiz-de-la-sección)
+
 ## ¿Qué es un “efecto” en React?
 
 Un **side effect** es cualquier trabajo que ocurre **fuera del render** o que sincroniza tu componente con algo **externo**: llamadas a APIs, suscripciones, timers, manipulación del DOM, etc. Para eso usamos el hook **useEffect**.

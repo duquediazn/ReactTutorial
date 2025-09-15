@@ -6,6 +6,7 @@
 - [Ejemplos completos](#ejemplos-completos)
 - [Quiz de la sección](#quiz-de-la-sección)
 
+---
 ## Inicialización de estado en React
 
 ### App de ejemplo: “Color Box” (visión general)
@@ -151,6 +152,8 @@ const ids = useMemo(
 > - Si quieres conservar el resto de estado interno del componente → usa efecto (A).
 > - Si quieres reiniciar por completo cada ítem cuando cambie la fuente de datos → usa key (B).
 
+---
+
 ## Trabajar con objetos y arrays en el estado
 Hasta ahora hemos usado `useState` con valores simples (números, strings). Pero en aplicaciones reales muchas veces necesitamos manejar estructuras más complejas, como objetos o arrays.
 
@@ -285,6 +288,8 @@ shoppingCart.map((item) => {
 - Nunca mutamos directamente: React detecta los cambios comparando referencias (shallow comparison).
 
 Este patrón es esencial para mantener el estado inmutable y las actualizaciones de la UI funcionando de forma predecible.
+
+---
 
 ## Ejemplos completos
 

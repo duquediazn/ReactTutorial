@@ -12,6 +12,8 @@
 - [Resumen rápido](#resumen-rápido)
 - [Quiz](#quiz-de-la-sección)
 
+---
+
 ## Hello, React!
 Antes de empezar a crear componentes más complejos, vamos a ver el **flujo básico de una aplicación React**.
 
@@ -77,6 +79,8 @@ root.render(reactElement)
 Esto muestra que JSX es simplemente una forma más cómoda y legible de escribir lo mismo.
 Normalmente no usaremos createElement directamente, pero entenderlo ayuda a recordar que JSX no es HTML, sino JavaScript.
 
+---
+
 ## Primer componente
 
 Hasta ahora hemos renderizado un simple `<h1>`, pero React se basa en la idea de **componentes**.
@@ -141,6 +145,8 @@ Fíjate en varias cosas importantes:
 | `maxlength`| `maxLength`| Igual: atributos compuestos → *camelCase*. |
 | `onclick`  | `onClick`  | Los manejadores de eventos en JSX usan *camelCase*. |
 
+---
+
 ## Fragmentos (Fragments)
 
 En React, cada componente debe devolver un **único elemento padre**.  
@@ -197,6 +203,8 @@ function Page() {
 
 root.render(<Page />)
 ```
+
+---
 
 ## Separar componentes en archivos
 Hasta ahora hemos definido todos los componentes en un mismo archivo.  
@@ -270,6 +278,7 @@ Si quisiéramos exportar varias cosas desde un mismo archivo, usaríamos exports
 - Reutilización: un mismo componente se puede importar en distintas partes de la app.  
 - Facilita el mantenimiento: cada archivo es más corto y más sencillo de leer.  
 
+---
 
 ## Primera app de ejemplo
 Ahora que ya hemos visto qué son los componentes y cómo organizarlos, podemos construir nuestra **primera aplicación completa**.
@@ -318,6 +327,8 @@ Estructura de la app "React Facts":
 - index.html
 - package.json
 
+---
+
 ## La carpeta `public` en Vite
 
 En los proyectos creados con Vite, los archivos estáticos como imágenes o fuentes deben colocarse dentro de la carpeta **`public/`**.
@@ -344,6 +355,8 @@ Este ejemplo es importante porque muestra:
 - Dónde empieza el flujo de renderizado: **index.html → main.jsx → App.jsx → componentes**. 
 - Cómo usar correctamente la carpeta `public/` para imágenes y otros recursos estáticos.  
 
+---
+
 ## Resumen rápido
 
 - React necesita un `#root` en el HTML.  
@@ -352,6 +365,8 @@ Este ejemplo es importante porque muestra:
 - JSX se parece a HTML, pero en realidad es JavaScript que se compila a `React.createElement`.  
 - React se encarga de traducir esos objetos a DOM real de manera eficiente usando el Virtual DOM.  
 - Los recursos estáticos deben ir en `public/` para que Vite los sirva correctamente.
+
+---
 
 ## Quiz de la sección
 Para terminar, [aquí](./quiz01.md) tienes algunas preguntas para comprobar si has interiorizado bien los conceptos vistos en esta sección. Si no has dado una con las respuestas, quizá sea buena idea volver a darle un repasito a la lección.  

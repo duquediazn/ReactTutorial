@@ -11,6 +11,7 @@ Para ilustrarlo usaremos una pequeña aplicación de ejemplo llamada Lucky Seven
 - [Ejemplo completo](#ejemplos-completos)
 - [Quiz de la sección](#quiz-de-la-sección)
 
+---
 
 ## Lucky Seven
 
@@ -192,6 +193,7 @@ _“Lift state… but no higher”_
 - ¿El hijo necesita aportar información al actualizar? → El handler debe aceptar parámetros (ej. `onClick={( ) => handler(i)}`).  
 - **Separar lógica y presentación**: `LuckyN` es el “listo” (estado + reglas), `Dice` y `Die` son “tontos” (solo muestran props).  
 
+---
 
 ## Prop drilling
 
@@ -280,6 +282,8 @@ Aquí `Die` accede al `goal` directamente con `useContext`, sin que `LuckyN` ni 
 - **Context** → útil cuando un mismo dato se necesita en muchos lugares de la app o a través de varios niveles.
 - Usa Context con cuidado: si lo aplicas en exceso, puede hacer más difícil entender de dónde vienen los datos.
 
+---
+
 ## Separar lógica y presentación
 
 En React conviene distinguir entre:
@@ -294,11 +298,14 @@ Lucky Seven como ejemplo
 
 > Este patrón hace que el código sea más modular, fácil de probar y que los componentes visuales puedan reutilizarse en otros proyectos.
 
+---
 
 ## Ejemplo completo
 
 Observa y prueba la app de esta sección: 
 - [Lucky Seven](../05_ComponentDesign/lucky-seven/).
+
+---
 
 ## Quiz de la sección
 Para terminar, [aquí](./quiz05.md) tienes algunas preguntas para comprobar si has interiorizado bien los conceptos vistos en esta sección. Si no has dado una con las respuestas, quizá sea buena idea volver a darle un repasito a la lección.  
